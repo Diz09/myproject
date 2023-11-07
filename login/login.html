@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img class="image1" src="4.png">
+            <div class="a">
+                <h2>Selamat Datang</h2>
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <div class="input">
+                                <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter Password" onmouseover="showPassword(this)" onmouseout="hidePassword(this)">
+                            </div>
+                        </div>
+                        <label><input class="checkbox" type="checkbox" id="condition" name="condition" value="1"> I agree to terms & condtions<br></label>
+                        <button class="btn1" type="submit" id="loginBtn" disabled>Login</button>
+                        <p class="or">------------------- or --------------------</p>
+                        <button class="btn2">
+                                <img class="image2" src="flat-color-icons_google.png">
+                                <h2>Login with Google</h2>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    
+    function showPassword(input) {
+        
+        input.type = 'text'; // Ubah tipe input ke "text" saat kursor berada di dalam input
+    }
+
+    function hidePassword(input) {
+        input.type = 'password'; // Kembalikan tipe input ke "password" saat kursor keluar dari input
+    }
+
+    document.getElementById('condition').addEventListener('change', function () {
+        var loginButton = document.getElementById('loginBtn');
+        loginButton.disabled = !this.checked;
+    });
+
+</script>
+</html>
