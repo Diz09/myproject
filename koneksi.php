@@ -3,7 +3,7 @@
 $server     = "localhost";
 $username   = "root";
 $password   = "";
-$db         = "native"; //nama db
+$db         = "a_percobaan_native"; //nama db
 $koneksi    = mysqli_connect($server, $username, $password, $db);
 
 //cek jika koneksi gagal
