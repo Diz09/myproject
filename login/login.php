@@ -20,7 +20,7 @@
                 if($userval == $email && $passval == $pass){
                     $_SESSION['id'] = $idval;
                     
-                    header('location: test.php');
+                    header('location: ../dashboard/index.html');
                     exit;
                 } else {
                     $error = "user atau password salah!!";
