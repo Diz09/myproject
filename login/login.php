@@ -23,7 +23,7 @@
                 if ($userval == $email && $passval == $pass) {
                     $_SESSION['id'] = $idval;
                     
-                    header('location: ../dashboard/dashboard_percobaan.php');
+                    header('location: ../dashboard/profil.php');
                     exit;
                 } else {
                     $error = "USER ATAU PASSWORD SALAH!!";
