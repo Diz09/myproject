@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rancho&display=swap');
 
 *{
     margin: 0;
@@ -116,7 +116,11 @@
 
 .logo{
     color: white;
+
     font-size: 6vh;
+    font-family: 'Rancho', cursive;
+    font-weight: normal;
+
     margin-top: 3vh;
     margin-left: 2vh;
     padding: 1vh;
