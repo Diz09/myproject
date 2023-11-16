@@ -1,5 +1,5 @@
 <?php
-    require_once ('../koneksi.php');
+    require_once ("../koneksi.php");
     
     session_start();
 
@@ -10,18 +10,18 @@
         $pass = $_POST['txt_pass'];
 
         if(!empty(trim($email)) && !empty(trim($pass))){
-            $query = "SELECT *FROM user_detail WHERE user_email = '$email'";
+            $query = "SELECT * FROM user WHERE user_email = '$email'";
             $result = mysqli_query($koneksi, $query);
             $row = mysqli_fetch_assoc($result);
 
             if ($row) {
-                $idval = $row['id'];
+                $idval = $row['id_user'];
                 $valName = $row['user_fullname'];
                 $userval = $row['user_email'];
                 $passval =$row['user_password'];
 
                 if ($userval == $email && $passval == $pass) {
-                    $_SESSION['id'] = $idval;
+                    $_SESSION['id_user'] = $idval;
                     
                     header('location: ../dashboard/profil.php');
                     exit;

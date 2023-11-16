@@ -4,7 +4,7 @@
 
     session_start();
 
-    if (!isset($_SESSION['id'])){
+    if (!isset($_SESSION['id_user'])){
         header('Location: ../login/login.php');
         exit;
     }
@@ -13,15 +13,15 @@
         return $row && isset($row[$key]) ? $row[$key] : "Data tidak tersedia";
     }
 
-    $idVal = $_SESSION['id'];
+    $idVal = $_SESSION['id_user'];
 
-    $query = "SELECT * FROM user_detail WHERE id = '$idVal'";
+    $query = "SELECT * FROM user WHERE id_user = '$idVal'";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {
         $row = mysqli_fetch_assoc($result);
     
-        $valId = getSafeValue($row, 'id');
+        $valId = getSafeValue($row, 'id_user');
         $valName = getSafeValue($row, 'user_fullname');
         $valTelp = getSafeValue($row, 'telp');
         $valEmail = getSafeValue($row, 'user_email');
@@ -115,9 +115,9 @@
             <div class="sidebar">
                 <ul>
                     <li style="background: #EBEDF1;"><a style="color: #6B5048;" href="profil.php">Profil</a></li>
-                    <li><a href="#">Katalog</a></li>
-                    <li><a href="#">Detail Transaksi</a></li>
-                    <li><a href="pelanggan.html">Pelanggan</a></li>
+                    <li><a href="Katalog.php">Katalog</a></li>
+                    <li><a href="pesanan.php">Pesanan</a></li>
+                    <li><a href="pelanggan.php">Pelanggan</a></li>
                     <li><a href="../login/login.php">Logout</a></li>
                 </ul>
             </div>

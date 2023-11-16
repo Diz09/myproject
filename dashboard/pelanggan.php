@@ -6,10 +6,12 @@
     <style>
         .box_profil{
             position: relative;
-            width: 128vh;
-            height: 70vh;
-            margin-top: 5vh;
+            width: auto;
+            height: auto;
+            margin-top: 3vh;
             margin-left: 5vh;
+            margin-right: 5vh;
+            padding-right: 3vh;
 
             /* display: flex; */
             /* align-items: center; */
@@ -35,18 +37,14 @@
                                     <th>No.</th>
                                     <th>Nama</th>
                                     <th>Email</th>
-                                    <th>N0. Telepon</th>
+                                    <th>No. Telepon</th>
                                     <th>Alamat</th>
+                                    <th>Gambar</th>
+                                    <th>aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th>1</th>
-                                    <th>saya</th>
-                                    <th>d1@gmail.com</th>
-                                    <th>081261782718</th>
-                                    <th>Isekai</th>
-                                </tr>
+                                <?php include 'tabel_data_pelanggan.php'; ?>
                             </tbody>
                         </table>
                     </div>
@@ -61,9 +59,9 @@
             <div class="sidebar">
                 <ul>
                     <li><a href="profil.php">Profil</a></li>
-                    <li><a href="#">Katalog</a></li>
-                    <li><a href="#">Detail Transaksi</a></li>
-                    <li style="background: #EBEDF1;"><a style="color: #6B5048;" href="pelanggan.html">pelanggan</a></li>
+                    <li><a href="katalog.php">Katalog</a></li>
+                    <li><a href="pesanan.php">Pesanan</a></li>
+                    <li style="background: #EBEDF1;"><a style="color: #6B5048;" href="pelanggan.php">Pelanggan</a></li>
                     <li><a href="../login/login.php">Logout</a></li>
                 </ul>
             </div>

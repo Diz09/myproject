@@ -62,7 +62,7 @@
     color: #6B5048;
 }
 
-/* table */
+/* table profil */
 .t1{
     margin-top: 2vh;
 }
@@ -86,7 +86,7 @@
     color: #6B5048;
 } */
 
-/* pelanggan */
+/* table pelanggan */
 .tab1{
     padding: 3vh;
 }
@@ -95,17 +95,29 @@
     font-family: Arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 .tab1 thead tr, tbody tr{
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #6B5048;
     text-align: left;
     padding: 8px;
 }
 
-.tab1 th {
-    background-color: #f2f2f2;
+.tab1 th, .tab1 td {
+    background-color: #D8B894;
+}
+
+.tab1 td button {
+    /* border: none; */
+    background-color: #6B5048;
+    color: white;
+}
+
+.tab1 td img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
 }
 
 /* sidebar */

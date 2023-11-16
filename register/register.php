@@ -11,7 +11,7 @@
         $pass = $_POST['pass'];
 
         if (!empty($fullname) && !empty($email) && !empty($pass)) {
-            $query = "INSERT INTO `user_detail` (`id`, `user_email`, `user_password`, `user_fullname`, `telp`, `alamat`, `pict`, `level`) VALUES (NULL, '$email', '$pass', '$fullname', '', '', '', 1);";
+            $query = "INSERT INTO `user` (`id_user`, `user_email`, `user_password`, `user_fullname`, `telp`, `alamat`, `pict`, `id_level`) VALUES (NULL, '$email', '$pass', '$fullname', '', '', '', 1);";
             $result = mysqli_query($koneksi, $query);
 
             if ($result) {
