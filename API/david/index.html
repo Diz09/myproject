@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Font -->
+    <link rel="preconnect" class="nav-link" href="https://fonts.googleapis.com">
+    <link rel="preconnect" class="nav-link" href="https://fonts.gstatic.com" crossorigin>
+    <link class="nav-link" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Bootstrap -->
+    <link class="nav-link" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <!-- CSS DataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" class="nav-link" href="index.css">
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Query -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- JS DataTable -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row row-cols-2">
+            <div class="d-flex flex-column justify-content-between col-auto bg-light min-vh-100 custom-sidebar"
+                id="sidebar">
+                <div class="mt-4 w-100">
+                    <div class="row row-cols-2" id="logotoggler">
+                        <div class="d-flex justify-content-center col-sm-9">
+                            <img src="img/Logo.png" alt="Logo Hana Asri" height="50px">
+                        </div>
+<<<<<<< Updated upstream
+=======
+                        <div class="d-flex align-items-center justify-content-center col-sm-3 ms-auto">
+                            <button class="navbar-toggler text-black border-1 rounded-5 p-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+                                aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle sidebar"
+                                id="sidtog">
+                                <span role="button"><i class="fa fa-bars" aria-hidden="true"
+                                        style="color: #000000;"></i></span>
+                            </button>
+                        </div>
+>>>>>>> Stashed changes
+                    </div>
+                    <hr class="text-black" />
+                    <ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
+                        <li class="nav-item">
+<<<<<<< Updated upstream
+                            <a class="nav-link text-black" href="../../dashboard/index.html" aria-current="page" id="Dashboard">
+=======
+                            <a class="nav-link text-black" href="../../dashboard/index.html" aria-current="page"
+                                id="Dashboard">
+>>>>>>> Stashed changes
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ms-2">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#sidemenu" data-bs-toggle="collapse">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="ms-2">Karyawan</span>
+                            </a>
+                            <ul class="nav collapse ms-3 flex-column show" id="sidemenu" data-bs-parent="#menu">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black active" href="">Karyawan Tetap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="../karyawantidaktetap/index.html">Karyawan
+                                        Tidak Tetap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="../../absensi/index.html" aria-current="page">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="ms-2">Absen Karyawan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black"
+                                href="http://localhost/web-hanaasri/resources/views/tugaskaryawan/index.html"
+                                aria-current="page">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <span class="ms-2">Tugas Karyawan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#sidemenu-2" data-bs-toggle="collapse">
+                                <i class="fa-solid fa-file"></i>
+                                <span class="ms-2">Laporan</span>
+                            </a>
+                            <ul class="nav collapse ms-3 flex-column" id="sidemenu-2" data-bs-parent="#menu">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="../../laporan/absensi/index.html">Absensi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="../../laporan/tugas/index.html">Tugas</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-5">
+                    <button type="button" class="btn w-100 text-white" id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-xl-9 col-rows-1">
+                <div class="container m-4">
+                    <div class="position-relative">
+                        <h1 class="text-black"> Karyawan Tetap</h1>
+                        <button type="button" class="btn text-white"
+                            style="background-color: rgba(255, 145, 76, 1); position: absolute; top: 0; right: 0;"
+                            data-bs-toggle="modal" data-bs-target="#tambahModal">
+                            <i class="fa-solid fa-plus"></i> Tambah Data
+                        </button>
+                        <script>
+                            function redirectToForm() {
+                                // Menggunakan location.href untuk mengarahkan ke halaman 'form.html'
+                                window.location.href = 'form.html';
+                            }
+                        </script>
+                    </div>
+                    <div class="card p-2 mt-4">
+                        <table id="example" class="display" width=100%>
+                            <thead>
+                                <tr>
+                                    <th data-orderable="false">No</th>
+                                    <th>Nama Karyawan</th>
+                                    <th>Devisi</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Data akan dimuat di sini melalui JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+
+                <!-- Modal Detail Form -->
+                <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Detail Karyawan</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="detailForm">
+                                    <div class="mb-3">
+                                        <label for="detailNama" class="form-label">Namamma</label>
+                                        <input type="text" class="form-control" id="detailNama" readonly>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="detailEmail" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="detailEmail" readonly>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="detailPassword" class="form-label">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="detailPassword" readonly>
+                                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="detailDivisi" class="form-label">Divisi</label>
+                                        <input type="text" class="form-control" id="detailDivisi" readonly>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Tambah Data -->
+                <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Tambah Karyawan</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Formulir Tambah Data -->
+                                <form id="tambahForm">
+                                    <div class="mb-3">
+                                        <label for="inputNama" class="form-label">Nama</label>
+                                        <input type="text" class="form-control" id="inputNama" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputDivisi" class="form-label">Divisi</label>
+                                        <select class="form-select" id="inputDivisi" required>
+                                            <!-- NamaDevisi akan dimuat melalui JavaScript -->
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Tutup</button>
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="simpanData()">Simpan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

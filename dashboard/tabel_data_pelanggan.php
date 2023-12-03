@@ -2,6 +2,14 @@
 
     require_once("../koneksi.php");
 
+    session_start();
+
+    if (!isset($_SESSION['id_user'])){
+        header('Location: ../login/login.php');
+        exit;
+    }
+
+
     $query = "SELECT * FROM user WHERE id_level = 2" ;
     $result = mysqli_query($koneksi, $query);
 
